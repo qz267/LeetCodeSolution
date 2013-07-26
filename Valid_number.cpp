@@ -1,6 +1,6 @@
 class Solution {
 public:
-    //Be careful to all exceptions
+    //Be careful to all exceptions 
     bool isNumber(const char *s) {
         if (!s) 
             return false;
