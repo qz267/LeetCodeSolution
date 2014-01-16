@@ -8,14 +8,14 @@
 
 
 def maxArea(heights):
-    l, r = 0, len(heights) - 1
-    currMax = min(heights[l], heights[r]) * (r - l)
-    while l < r:
-        currMax = max(currMax, min(heights[l], heights[r]) * (r - l))
-        if heights[l] < heights[r]:
-            l += 1
+    left, right = 0, len(heights) - 1
+    currMax = min(heights[left], heights[right]) * (right - left)
+    while left < right:
+        currMax = max(currMax, min(heights[left], heights[right]) * (right - left))
+        if heights[left] < heights[right]:
+            left += 1
         else:
-            r -= 1
+            right -= 1
     return currMax
 
 print maxArea([2, 4, 1, 3])

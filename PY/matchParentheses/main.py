@@ -17,14 +17,14 @@ def isValid(array):
         if i in ['(', '{', '[']:
             stack.append(i)
         if i in [')', '}', ']']:
-            if stack and _match(stack[-1], i):
+            if stack and match(stack[-1], i):
                 stack.pop()
             else:
                 return False
     return len(stack) == 0
 
 
-def _match(c1, c2):
+def match(c1, c2):
     return any([c1 == '(' and c2 == ')', c1 == '[' and c2 == ']', c1 == '{' and c2 == '}'])
 
 if __name__ == '__main__':
