@@ -12,3 +12,6 @@ class Solution(object):
     input: a = {3,3,4}; b = {4}; output: c = {3,4};
     input: a = {1,2,2,3,3,4,5,6,7}; b = {4,5,6,7,8,8,8}; output: c = {1,2,3,4,5,6,7,8};
     """
+
+    def merge_sorted_lists(self, lists):
+        pass
