@@ -11,13 +11,13 @@ class Solution(object):
         a_h_m = float((360/12)/60)
         a_m = float(360/60)
 
-        h = float(( hour % 12 ) * a_h + minute * a_h_m)
+        h = float((hour % 12) * a_h + minute * a_h_m)
         m = float(minute * a_m)
 
         angle = abs(float(h-m))
         return min(angle, 360.0 - angle)
 
 s = Solution()
-print s.get_angle(hour=1, minute=28)
+print s.get_angle(hour=17, minute=36)
 
 
