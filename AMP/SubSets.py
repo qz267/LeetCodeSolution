@@ -13,3 +13,15 @@ class Solution(object):
     input: {a,b,c}
     output: {}{a}{b}{c}{a,b}{a,c}{b,c}{a,b,c}
     """
+
+    def sub_sets(self, s):
+        result = [[]]
+        for x in s:
+            result += [y + [x] for y in result]
+        return result
+
+
+s = Solution()
+result = s.sub_sets(s="abcd")
+print(result)
+print len(result)
