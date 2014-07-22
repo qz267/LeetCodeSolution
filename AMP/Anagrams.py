@@ -10,7 +10,7 @@ class Solution(object):
         if len(s1) != len(s2):
             return False
         else:
-            return 2[::-1] == s1
+            return s2[::-1] == s1
 
 s1 = "123"
 s2 = "3241"
